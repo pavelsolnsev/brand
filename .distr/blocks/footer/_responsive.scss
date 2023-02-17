@@ -1,0 +1,53 @@
+.footer {
+    @media (min-width: 575px) {
+    }
+    @media (min-width: 767px) {
+        padding-bottom: 0;
+        &__button-fixed {
+			display: none;
+		}
+
+        &__button {
+            display: block;
+        }
+    }
+    @media (min-width: 991px) {
+        .footer {
+            &__inner {
+            }
+
+            &__link {
+                font-size: 3.6rem;
+                line-height: 5rem;
+                span {
+                    text-decoration: underline;
+                }
+            }
+
+            &__link-disign {
+                display: block;
+                font-size: 3.6rem;
+                line-height: 5rem;
+                span {
+                    text-decoration: underline;
+                }
+            }
+
+            &__button {
+                line-height: 8.7rem;
+                font-size: 3rem;
+                max-width: 30.3rem;
+                margin-bottom: 0;
+            }
+
+            &__box {
+                gap: 5rem;
+                display: flex;
+                align-items: center;
+                
+            }
+        }
+    }
+    @media (min-width: 1199px) {
+    }
+}

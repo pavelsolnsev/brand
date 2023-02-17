@@ -1,0 +1,20 @@
+.form-section {
+    @media (min-width: 575px) {
+    }
+    @media (min-width: 767px) {
+        display: block;
+        padding: 8rem 0;
+    }
+    @media (min-width: 991px) {
+    }
+    @media (min-width: 1199px) {
+    }
+}
+.form-section_2 {
+    padding-top: 20rem;
+    z-index: 8;
+    margin-top: -20vw;
+    margin-bottom: 11vw;
+}
+@media (min-width: 1199px) {
+}

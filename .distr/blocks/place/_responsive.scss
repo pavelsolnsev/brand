@@ -1,0 +1,63 @@
+.place {
+    @media (min-width: 575px) {
+    }
+    @media (min-width: 767px) {
+    }
+    @media (min-width: 991px) {
+        &__box {
+            max-width: 120rem;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: 11rem;
+            line-height: 12rem;
+            margin-bottom: 3.8rem;
+        }
+
+        &__text {
+            font-size: 3.6rem;
+            line-height: 5rem;
+            padding-left: 0;
+            margin-bottom: 8rem;
+        }
+
+        &__list {
+            display: flex;
+            max-width: 100%;
+            margin-bottom: 12rem;
+        }
+
+        &__item {
+            border-bottom: none;
+            padding-right: 11.4rem;
+            margin-right: 11.4rem;
+            border-right: 0.1rem solid#C4C4C4;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            &:last-child {
+                border: none;
+            }
+            span {
+                font-family: "HeadingNow", Arial, Helvetica, sans-serif;
+                font-size: 8rem;
+                line-height: 9.5rem;
+                color: #ffffff;
+                display: block;
+                margin-bottom: 1.8rem;
+            }
+            div {
+                font-weight: 300;
+                font-size: 3.6rem;
+                line-height: 5rem;
+                color: #ffffff;
+            }
+        }
+
+        
+    }
+    @media (min-width: 1199px) {
+    }
+    @media (min-width: 1199px) {
+    }
+}

@@ -1,0 +1,22 @@
+.marquee {
+	position: relative;
+	z-index: 11;
+	margin-top: 15vw;
+	margin-bottom: 10vw;
+	&__box {
+		display: flex;
+		gap: 60vw;
+	}
+	&__text {
+		font-family: "HeadingNow-94";
+		font-size: 12vw;
+		line-height: 100%;
+	}
+	&__right {
+		margin-top: 15vw;
+	}
+	&__right,
+	&__left {
+		transform: rotate(-5deg);
+	}
+}

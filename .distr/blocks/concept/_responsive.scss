@@ -1,0 +1,48 @@
+.concept {
+    @media (min-width: 575px) {
+    }
+    @media (min-width: 767px) {
+    }
+    @media (min-width: 991px) {
+        &__box {
+            gap: 8.3rem;
+            &::after {
+                width: 44rem;
+            }
+            &::before {
+                width: 22rem;
+            }
+        }
+
+        &__title {
+            font-size: 3rem;
+            line-height: 3.6rem;
+        }
+
+        &__subtitle {
+            font-size: 3rem;
+            line-height: 3.6rem;
+        }
+
+        &__block {
+            .slick-next {
+                width: 24rem;
+                left: 20rem;
+            }
+            .slick-prev {
+                width: 24rem;
+            }
+        }
+
+        &__item {
+            &:first-child {
+            }
+            font-size: 3.6rem;
+            line-height: 5rem;
+        }
+    }
+    @media (min-width: 1199px) {
+        &__item {
+        }
+    }
+}

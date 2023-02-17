@@ -1,0 +1,276 @@
+.header {
+	padding-top: 0;
+	z-index: 9999;
+
+	&.fixed {
+		.header__logo-text {
+			display: none;
+		}
+		.header__center {
+			justify-content: flex-end;
+		}
+	}
+	&__inner {
+		padding: 1.6rem 0 1.6rem 0;
+		position: fixed;
+		right: unset;
+		top: unset;
+		.fixed & {
+			padding: 2rem 0 2rem 0;
+			background: #000218;
+			position: fixed;
+			z-index: 40;
+		}
+		width: 100%;
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__right {
+		display: flex;
+	}
+	&__left {
+		display: flex;
+	}
+	&__center {
+		display: flex;
+
+	}
+	&__sbf {
+		display: none;
+		margin-left: 4rem;
+		
+	}
+	&__logo {
+		display: flex;
+		gap: 0.7rem;
+		padding-left: 1rem;
+		align-items: center;
+		&-box {
+			img {
+				width: 8rem;
+				//top: 0.5rem;
+				//position: relative;
+			}
+			// &_1 {
+			// 	img {
+			// 		width: 8.8rem;
+			// 	}
+			// }
+		}
+
+		&-text {
+			font-weight: 300;
+			font-size: 1.6rem;
+			line-height: 125%;
+			color: #ffffff;
+			border-left: 1px solid #fff;
+			padding-left: 2rem;
+			display: none;
+		}
+	}
+
+	&__phone {
+		&-number {
+			display: none;
+			margin-left: 2%;
+		}
+		&-logo {
+			img {
+				width: 2.5rem;
+				height: 2.5rem;
+				margin-left: 5px;
+			}
+		}
+	}
+
+	&__button {
+		display: block;
+		position: fixed;
+		bottom: 1rem;
+		left: 0;
+		color: #fff;
+		background: #00a3ff;
+		box-shadow: 0 2.21903rem 5.54757rem rgba(0, 163, 255, 0.6);
+		font-size: 2.4rem;
+		line-height: 4.5rem;
+		text-align: center;
+		z-index: 1;
+		display: none;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 90%;
+	}
+
+	&__nav {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		display: none;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 10rem 3.5rem 3.5rem;
+		background: #000218;
+		min-height: 100vh;
+		z-index: -1;
+		width: 100%;
+		max-width: 100%;
+		transition: all 0.4s ease-out;
+		a {
+			text-align: center;
+		}
+		&-button {
+			display: block;
+			margin: 2rem 0 3.4rem 1.6rem;
+			font-weight: 400;
+			font-size: 2rem;
+			line-height: 4.8rem;
+			color: #fff;
+			background: #00a3ff;
+			width: 21.5rem;
+		}
+		&-link {
+			font-weight: 700;
+			font-size: 1.9rem;
+			line-height: 2.4rem;
+			color: #fff;
+			opacity: 0;
+			margin: 0 0 3.4rem 5.6rem;
+			&:before,
+			&:after {
+				display: none;
+			}
+			&:hover {
+				opacity: 0.75;
+			}
+			&:active {
+				opacity: 0.5;
+			}
+		}
+		&.active {
+			top: 120px;
+			right: 0;
+			z-index: -1;
+			box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.25), 0 0.4rem 6rem rgba(0, 0, 0, 0.25),
+				0 0.4rem 12rem rgba(0, 0, 0, 0.25);
+
+			.header__nav-link {
+				animation: moveLink 0.4s ease-in-out;
+				animation-fill-mode: forwards;
+				@keyframes moveLink {
+					0% {
+						transform: translate3d(5rem, 0, 0);
+					}
+					100% {
+						opacity: 1;
+						transform: translate3d(0, 0, 0);
+					}
+				}
+			}
+		}
+	}
+	.line {
+		transition: all 4s;
+		position: relative;
+		&::before {
+			content: "";
+			background: #fff;
+			position: absolute;
+			height: 0.4rem;
+			width: 4rem;
+			left: 0;
+			top: 0;
+		}
+	}
+	&__menu {
+		border-radius: 0.2rem;
+		height: 2.9rem;
+		display: none;
+		position: absolute;
+		z-index: 999;
+		left: 0;
+		top: 0.9rem;
+		.ham {
+			cursor: pointer;
+			-webkit-tap-highlight-color: transparent;
+			transition: transform 0.5s;
+			user-select: none;
+			width: 4rem;
+			height: 3rem;
+		}
+		.hamRotate.active {
+			position: fixed;
+			right: 3rem;
+			width: 4rem;
+			height: 11rem;
+			.line {
+				background: #fff;
+			}
+		}
+		.hamRotate180.active {
+		}
+
+		.hamR .middle {
+			&::before {
+				width: 4rem;
+				left: 0;
+				top: 1.2rem;
+			}
+		}
+		.hamR .bottom {
+			&::before {
+				width: 2rem;
+				left: 0;
+				top: 2.4rem;
+			}
+		}
+		.hamR.active .middle {
+			&::before {
+				width: 4rem;
+				left: 0;
+				transition: transform 0.7s;
+				transform: translateY(3.6rem);
+			}
+		}
+		.hamR.active .bottom {
+			&::before {
+				width: 2rem;
+				left: 0;
+				transition: transform 0.7s;
+				transform: translateY(7.1rem);
+			}
+		}
+	}
+	&__mobile-menu {
+		position: relative;
+		z-index: 10;
+		top: -0.4rem;
+		display: block;
+		width: 2rem;
+		height: 2.4rem;
+		.top {
+			&::before {
+				height: 0.2rem;
+				width: 1.8rem;
+				top: 0.7rem;
+			}
+		}
+		.middle {
+			&::before {
+				height: 0.2rem;
+				width: 1.8rem;
+				top: 1.4rem;
+			}
+		}
+		.bottom {
+			&::before {
+				height: 0.2rem;
+				width: 1.8rem;
+				top: 2.1rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.speaker {
+	padding: 5rem 0 15rem;
+	&__title {
+		margin: 0;
+		font-weight: 800;
+		font-size: 2.4rem;
+		line-height: 4.9rem;
+		color: #fff;
+	}
+	&__item {
+		&-info {
+			margin-bottom: 2rem;
+		}
+		&-name {
+			font-weight: 300;
+			font-size: 2.5rem;
+			line-height: 120%;
+		}
+		&-about {
+			margin-top: 1rem;
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+		}
+		&-image {
+			margin: 2rem 0;
+		}
+		&-title {
+			font-family: "HeadingNow-94";
+			font-size: 2.5rem;
+			line-height: 120%;
+			margin-bottom: 2rem;
+		}
+		&-list {
+			font-family: "HeadingNow-94";
+			list-style-type: disc;
+			font-size: 1.5rem;
+			padding-left: 2rem;
+			li + li{
+				margin-top: 2rem;
+			}
+		}
+	}
+
+
+}

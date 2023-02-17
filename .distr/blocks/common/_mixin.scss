@@ -1,0 +1,40 @@
+@import '_functions';
+
+// Функция для пересчёта размеров из 'px' в 'vw'
+@function vw($value, $bp) {
+    $ratio: ($bp/100);
+    $result: ($value/$ratio);
+    @return #{$result}vw;
+    // @return $result;
+}
+
+
+// Миксин для вывода размеров в 'px' и 'vw'
+// @include vw('padding: 24px 75px 17px 62px');
+@mixin vw($str, $bp: 360) {
+    $result_vw: '';
+    $str: str-replace($str, ';', '');
+    $str_split: str-split($str, ':');
+
+    $attribute: nth($str_split, 1);
+    $values: unquote(nth($str_split, 2));
+    $values_split: str-split($values, ' ');
+
+    @each $value in $values_split {
+        @if ($value !='') {
+            // @debug '$value in ~' + $value + '~';
+            $value: to-number(quote($value));
+            $value: vw($value, $bp);
+            // @debug '$value out ~' + $value + '~';
+            $result_vw: $result_vw + $value + ' ';
+        }
+    }
+
+    // @debug '$result_vw ~' + $result_vw + '~';
+
+    #{$attribute}: $values; // Статичный размер для разрешений больше 1920
+
+    @media (max-width: #{$bp}px) {
+        #{$attribute}: #{$result_vw}; // Динамичный размер для разрешений меньше 1920
+    }
+}

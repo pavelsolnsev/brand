@@ -1,0 +1,191 @@
+.form {
+    @media (min-width: 380px) {
+        &__title {
+            font-size: 4vw;
+        }
+    }
+    @media (min-width: 767px) {
+        &__title {
+            font-size: 4.6rem;
+            margin: 0 0 4.4rem 0;
+            line-height: 4rem;
+        }
+        &__items {
+        }
+        &__item {
+            min-height: 7rem;
+        }
+        &__input {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            height: 6rem;
+            &::placeholder {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
+        }
+        &__button {
+            font-size: 2.2rem;
+        }
+        &__footer-text {
+            margin-top: 1.4rem;
+        }
+    }
+
+    @media (min-width: 991px) {
+        &__title {
+            display: block;
+            font-size: 6rem;
+            grid-area: title;
+            font-weight: 400;
+            margin: 0 0 10rem 0;
+            line-height: 12rem;
+        }
+        &__items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 6.5rem 1fr 12rem;
+            grid-template-areas:
+                "item-1 item-2 item-3"
+                "title title title"
+                "button  .  text";
+            grid-gap: 1rem;
+        }
+        &__text {
+        }
+        &__item {
+            min-height: 7rem;
+            &:nth-child(1) {
+                grid-area: item-1;
+            }
+            &:nth-child(2) {
+                grid-area: item-2;
+            }
+            &:nth-child(3) {
+                grid-area: item-3;
+            }
+            &:nth-child(5) {
+                grid-area: button;
+            }
+        }
+        &__footer-text {
+            margin-top: 2.4rem;
+        }
+        &__button {
+            margin-top: 0;
+            font-size: 3rem;
+            line-height: 3.6rem;
+        }
+        &__more {
+            grid-area: text;
+        }
+    }
+    @media (min-width: 1291px) {
+        &__title {
+            font-size: 10rem;
+            line-height: 12rem;
+            font-weight: bold;
+        }
+    }
+    @media (min-width: 1491px) {
+        &__title {
+            font-size: 10rem;
+            line-height: 12rem;
+            font-weight: bold;
+        }
+
+        &__items {
+            grid-template-rows: 6.5rem 1fr 12rem;
+            grid-gap: 3.5rem;
+        }
+
+        &__input {
+            height: 8rem;
+            font-size: 3rem;
+            line-height: 3.6rem;
+            &::placeholder {
+                font-size: 3rem;
+                line-height: 3.6rem;
+            }
+        }
+
+        &__item {
+            min-height: 7rem;
+        }
+        &__footer-text {
+            margin-top: 3rem;
+            font-size: 2.3rem;
+            line-height: 3rem;
+        }
+        &__button {
+            height: 11.6rem;
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    .version-webinar {
+        .form-section {
+            position: relative;
+        }
+        .form {
+            &__title {
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+            &__items {
+                grid-template-areas:
+                "title title title"
+                "item-1 item-2 item-3"
+                "button . text";
+            }
+        }
+    }
+}
+@media (min-width: 380px) {
+    .version-webinar {
+        .form {
+            &__title {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+            &__items {
+                grid-template-areas:
+                "title title title"
+                "item-1 item-2 item-3"
+                "button . text";
+            }
+        }
+    }
+}
+@media (min-width: 1491px) {
+    .version-webinar {
+        .form-section {
+            margin-top: 0rem;
+            z-index: 1000;
+            position: relative;
+        }
+        .form {
+            &__title {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+            &__items {
+                grid-template-areas:
+                "title title title"
+                "item-1 item-2 item-3"
+                "button . text";
+                grid-template-rows:  3rem 1fr  12rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1749px) {
+    .version-webinar {
+        .form-section {
+            margin-top: 12rem;
+            z-index: 1000;
+        }
+    }
+}

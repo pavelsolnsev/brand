@@ -1,0 +1,84 @@
+.brands {
+	&__inner {
+		padding: 21vw 0 3rem 0;
+	}
+
+	&__title {
+		font-family: "HeadingNow-94";
+		font-weight: 400;
+		font-size: 8.4vw;
+		line-height: 120%;
+		position: relative;
+		z-index: 7;
+	}
+
+	&__subtitle {
+		margin-top: 7vw;
+		margin-left: 3.8rem;
+		font-weight: 300;
+		font-size: 4.5vw;
+		font-weight: 2.4rem;
+		line-height: 120%;
+		position: relative;
+		z-index: 7;
+	}
+
+	&__block {
+		.ellipse {
+			margin-top: 20vw;
+			&::before {
+				background: url("../img/brands/ellipse.svg") no-repeat;
+				background-size: contain;
+				top: -18vw;
+				height: 52vw;
+			}
+		}
+		.cube {
+			margin-top: 40vw;
+
+			&::before {
+				background: url("../img/brands/cube.svg") no-repeat;
+				background-size: contain;
+				top: -10vw;
+				height: 45.6vw;
+			}
+		}
+		.star {
+			margin-top: 40vw;
+
+			&::before {
+				background: url("../img/brands/star.svg") no-repeat;
+				background-size: contain;
+				top: -17vw;
+				height: 47vw;
+			}
+		}
+	}
+	.slider__counter {
+		display: none;
+	}
+	&__item {
+		position: relative;
+		&::before {
+			position: absolute;
+			content: "";
+			background-size: cover;
+			left: 0;
+			top: 0;
+			max-width: 100%;
+			width: 100%;
+		}
+		&-text {
+			margin-top: 7vw;
+			margin-left: 3.8rem;
+			font-weight: 300;
+			font-size: 4.5vw;
+			font-weight: 2.4rem;
+			line-height: 120%;
+			position: relative;
+			z-index: 7;
+			margin: 0 auto;
+			max-width: 60%;
+		}
+	}
+}

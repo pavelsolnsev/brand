@@ -1,0 +1,47 @@
+{% set card = [
+    {
+        id: '1',
+        quest: 'В&nbsp;чем ценность форума?',
+        answer: '<p>Форум посвящен построению, развитию и&nbsp;капитализации личных и&nbsp;корпоративных брендов. За&nbsp;один день вы&nbsp;поймете как работают бренды во&nbsp;времена tik-tok, instagram, инфлюенсеров и&nbsp;растущих трендов на&nbsp;этику и&nbsp;экологичность.</p>'
+
+    }, {
+        id: '2',
+        quest: 'Для кого этот форум?',
+        answer: '<p>Форум для собственников и&nbsp;топ-менеджеров малого и&nbsp;среднего бизнеса, работающего на&nbsp;конкурентных рынках, думающих о&nbsp;росте и&nbsp;развитии, на&nbsp;практике столкнувшихся со&nbsp;сложностями продвижения своих услуг и&nbsp;продуктов в&nbsp;современном мире.</p>'
+    }
+] %}
+
+
+
+
+
+{# Резерв #}
+
+{#
+    {
+        id: '1',
+        quest: 'Какие вступительные испытания необходимы для поступления<br> на факультет журналистики?',
+        answer: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, culpa veniam blanditiis, maxime unde pariatur tempore quo quia non, atque dolor accusamus iste voluptas. Numquam voluptate optio dolores ipsam deserunt.</p>'
+
+    }, {
+        id: '2',
+        quest: 'Какие перспективы трудоустройства для выпускников<br> направления?',
+        answer: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, culpa veniam blanditiis, maxime unde pariatur tempore quo quia non, atque dolor accusamus iste voluptas. Numquam voluptate optio dolores ipsam deserunt.</p>'
+    }, {
+        id: '3',
+        quest: 'Приглашает ли факультет в ходе обучения известных журналистов,<br> знаменитых людей?',
+        answer: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, culpa veniam blanditiis, maxime unde pariatur tempore quo quia non, atque dolor accusamus iste voluptas. Numquam voluptate optio dolores ipsam deserunt.</p>'
+    }, {
+        id: '4',
+        quest: 'Каковы условия приема на факультет на базе среднего<br> профессионального образования?',
+        answer: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, culpa veniam blanditiis, maxime unde pariatur tempore quo quia non, atque dolor accusamus iste voluptas. Numquam voluptate optio dolores ipsam deserunt.</p>'
+    }, {
+        id: '5',
+        quest: 'Предоставляется ли общежитие нашим студентам?',
+        answer: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, culpa veniam blanditiis, maxime unde pariatur tempore quo quia non, atque dolor accusamus iste voluptas. Numquam voluptate optio dolores ipsam deserunt.</p>'
+    }, {
+        id: '6',
+        quest: 'Когда и куда нужно подавать документы для поступления?',
+        answer: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, culpa veniam blanditiis, maxime unde pariatur tempore quo quia non, atque dolor accusamus iste voluptas. Numquam voluptate optio dolores ipsam deserunt.</p>'
+    }
+#}

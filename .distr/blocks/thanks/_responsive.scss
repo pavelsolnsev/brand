@@ -1,0 +1,39 @@
+.thanks {
+    @media (min-width: 575px) {
+    }
+
+    @media (min-width: 767px) {
+
+        &__title {
+            font-size: 5vw;
+            line-height: 5vw;
+        }
+    
+        &__text {
+            font-size: 2vw;
+            line-height: 2.5vw;
+        }
+    
+        &__button {
+            font-size: 1.2vw;
+            line-height: 3vw;
+        }
+    }
+
+    @media (min-width: 991px) {
+    }
+
+    @media (min-width: 1199px) {
+
+        &__title {
+            max-width: 55%;
+        }
+    
+        &__text {
+            max-width: 45%;
+        }
+    }
+
+    @media (min-width: 1300px) {
+    }
+}

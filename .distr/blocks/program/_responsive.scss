@@ -1,0 +1,72 @@
+.program {
+    @media (min-width: 467px) {
+        &__item {
+            height: 20rem;
+        }
+    }
+    @media (min-width: 991px) {
+        margin-bottom: 12rem;
+        &__title {
+            font-size: 11rem;
+            line-height: 12rem;
+        }
+
+        &__inner {
+        }
+
+        &__title {
+        }
+
+        &__block {
+            margin-top: 15rem;
+        }
+
+        &__item {
+            flex-direction: row;
+            justify-content: left;
+            height: 35rem;
+            gap: 0rem;
+            align-items: center;
+        }
+        &__item-title {
+            font-size: 3.6rem;
+            line-height: 5rem;
+            max-width: 30rem;
+            width: 100%;
+        }
+
+        &__item-text {
+            max-width: 55vw;
+            width: 100%;
+            font-size: 2.6rem;
+            line-height: 5rem;
+        }
+    }
+    @media (min-width: 1199px) {
+        &__item {
+            height: 45rem;
+            gap: 5rem;
+        }
+        &__item-title {
+            font-size: 4.6rem;
+            line-height: 5rem;
+            max-width: 35rem;
+            width: 100%;
+        }
+
+        &__item-text {
+            font-size: 3.6rem;
+            line-height: 5rem;
+            max-width: unset;
+        }
+    }
+    @media (min-width: 1599px) {
+        &__item {
+            height: 30rem;
+            gap: 19rem;
+        }
+        &__item-title {
+            max-width: 40rem;
+        }
+    }
+}

@@ -1,0 +1,184 @@
+.speaker {
+    // position: relative;
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     background: conic-gradient(from 210.67deg at 73.67% 12.41%, 
+    //     rgba(255, 255, 255, 0) 27.48deg, 
+    //     rgba(20, 255, 0, 0.5) 13.72deg,
+    //      rgba(255, 255, 255, 0) 21.92deg,
+    //     rgba(255, 255, 255, 0) 27.14deg,
+    //      rgba(37, 255, 124, 0.3) 31.93deg,
+    //       rgba(92, 255, 157, 0.22453) 50.92deg,
+    //             rgba(255, 255, 255, 0) 78.4deg,
+    //          rgba(255, 255, 255, 0) 332.52deg,
+    //           rgba(20, 255, 0, 0.5) 373.72deg);
+    //           transform: matrix(-1, 0.01, 0.01, 1, 0, 0);
+    //           width: 150%;
+    //           height: 120%;
+    //           top: 0;
+    //           left: 0;
+    //           z-index: -1;
+    // }
+    // @media(min-width: 550px) {
+    //     &__title {
+    //         font-size: 4.4rem;
+    //         line-height: 5rem;
+    //         margin-bottom: 4rem;
+    //     }
+    //     &__item {
+    //         &-info {
+    //             max-width: 35rem;
+    //             margin-right: 9rem;
+    //         }
+    //         &-name {
+    //             font-size: 3.8rem;
+    //             line-height: 4.9rem;
+    //         }
+    //         &-about {
+    //             font-size: 2rem;
+    //             line-height: 2.6rem;
+    //         }
+    //         &-title {
+    //             font-size: 2.8rem;
+    //             line-height: 3.6rem;
+    //         }
+    //         &-list {
+    //             font-size: 2rem;
+    //             line-height: 2.6rem;   
+    //             li + li {
+    //                 margin-top: 3rem;
+    //             }
+    //         }
+    //         &__image {
+    //             margin-top: 4rem;
+    //         }
+    //         &-text {
+    //             align-self: center;
+    //         }
+    //     }
+
+    // }
+
+    @media(min-width: 550px) {
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+
+        }
+        &__title {
+            font-size: 4.4rem;
+            line-height: 5rem;
+            margin-bottom: 4rem;
+        }
+        &__item {
+            &-info {
+                max-width: 35rem;
+                margin-right: 9rem;
+            }
+            &-name {
+                font-size: 3.8rem;
+                line-height: 4.9rem;
+            }
+            &-about {
+                font-size: 2rem;
+                line-height: 2.6rem;
+            }
+            &-title {
+                font-size: 2.8rem;
+                line-height: 3.6rem;
+            }
+            &-list {
+                font-size: 2rem;
+                line-height: 2.6rem;   
+                li + li {
+                    margin-top: 3rem;
+                }
+            }
+            &__image {
+                margin-top: 4rem;
+            }
+            &-text {
+                align-self: center;
+            }
+        }
+    }
+
+    @media(min-width: 1300px) {
+        &__item {
+            &-info {
+                max-width: 35rem;
+                margin-right: 9rem;
+            }
+            &-name {
+                font-size: 4.2rem;
+                line-height: 5.2rem;
+            }
+            &-about {
+                font-size: 2rem;
+                line-height: 2.6rem;
+            }
+            &-title {
+                font-size: 3.5rem;
+                line-height: 4rem;
+                margin-bottom: 5rem;
+            }
+            &-list {
+                font-size: 2.5rem;
+                line-height: 3rem;   
+                li + li {
+                    margin-top: 3rem;
+                }
+            }
+            &-text {
+                align-self: flex-start;
+            }
+        }
+    }
+    @media(min-width: 1565px) {
+        margin-bottom: 20rem;
+        &__title {
+            font-size: 11rem;
+            line-height: 12rem;
+            margin-bottom: 5rem;
+        }
+        &__item {
+            &-info {
+                max-width: 66rem;
+                width: 100%;
+            }
+            &-name {
+                font-size: 8rem;
+                line-height: 100%;
+                margin-bottom: 5rem;
+            }
+            &-about {
+                font-size: 3rem;
+                line-height: 3.6rem;
+                font-weight: 300;
+                max-width: 45rem;
+                margin: 0 0 6rem;
+            }
+            &-title {
+                font-size: 6.5rem;
+                line-height: 7rem;
+                margin-bottom: 15rem;
+
+            }
+            &-list {
+                font-size: 4.5rem;
+                line-height: 5.5rem;
+
+                li + li {
+                    margin-top: 5.5rem;
+                }
+            }
+        }
+        .speaker__item + .speaker__item {
+            margin-left: 9rem;
+        }
+    }
+
+
+}

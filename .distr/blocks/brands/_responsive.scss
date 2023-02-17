@@ -1,0 +1,142 @@
+.brands {
+    @media (min-width: 575px) {
+    }
+    @media (min-width: 767px) {
+        &__inner {
+            padding: 23vw 0 5rem 0;
+        }
+
+        &__title {
+        }
+
+        &__subtitle {
+        }
+
+        &__block {
+        }
+
+        &__item {
+            &-text {
+            }
+        }
+    }
+    @media (min-width: 991px) {
+        &__inner {
+        }
+
+        &__title {
+            margin-left: 24rem;
+            font-size: 6rem;
+            line-height: 7rem;
+        }
+
+        &__subtitle {
+            margin-left: 24rem;
+            font-size: 3.6rem;
+            line-height: 5rem;
+        }
+
+        &__block {
+            position: relative;
+            margin-top: 7.6rem;
+            .ellipse {
+                margin-top: 22rem;
+                height: 37rem;
+                &::before {
+                    height: 57rem;
+                    top: -18rem;
+                }
+            }
+            .cube {
+                margin-top: 18rem;
+                height: 37rem;
+                &::before {
+                    top: -9rem;
+                    height: 50rem;
+                }
+            }
+            .star {
+                margin-top: 43rem;
+                top: -16rem;
+                height: 32rem;
+                &::before {
+                    height: 49rem;
+                    top: -18rem;
+                }
+            }
+        }
+
+        &__item {
+            &-text {
+                font-size: 5rem;
+                line-height: 6rem;
+            }
+        }
+        .slider__counter {
+            display: block;
+            position: absolute;
+            top: 0;
+            z-index: 100;
+            font-size: 3rem;
+            line-height: 3.6rem;
+        }
+        .slick-prev {
+            top: 7rem;
+            left: 0;
+            z-index: 10;
+
+            &::before {
+                content: "";
+            }
+            width: 10rem;
+            height: 3rem;
+            background: url(../img/brands/prev.svg) no-repeat;
+            background-size: contain;
+        }
+        .slick-disabled {
+            opacity: 0.25;
+        }
+        .slick-next {
+            top: 7rem;
+            left: 10rem;
+
+            width: 15rem;
+            height: 3rem;
+            background: url(../img/brands/next.svg) no-repeat;
+            background-size: contain;
+            &::before {
+                content: "";
+            }
+        }
+        .container {
+            padding-right: 0;
+            margin-right: 0;
+        }
+    }
+    @media (min-width: 1199px) {
+        &__inner {
+            padding: 25vw 0 11.5rem 0;
+        }
+
+        &__title {
+        }
+
+        &__subtitle {
+        }
+
+        &__block {
+        }
+
+        &__item {
+            &-text {
+            }
+        }
+    }
+    @media (min-width: 1550px) {
+        &__title {
+            margin-left: 24rem;
+            font-size: 11rem;
+            line-height: 12rem;
+        }
+    }
+}

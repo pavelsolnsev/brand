@@ -1,0 +1,119 @@
+.main {
+	background: url("../img/main/background-white.png") no-repeat;
+	background-size: cover;
+	background-position: top -4rem left -7rem;
+	position: relative;
+
+	&__video_box {
+		display: none;
+		position: absolute;
+		right: 0;
+		left: 0;
+		overflow: hidden;
+		z-index: -1;
+	}
+	&__video {
+		width: 100vw;
+	}
+
+	&::before {
+		position: absolute;
+		content: "";
+
+		// background: url("../img/main/greenlight.png") no-repeat;
+		// background-size: 212vw;
+		// background-position: top 8.5rem left 2rem;
+
+		width: 111vw;
+		height: 180vw;
+		top: -15.5vw;
+		left: -11vw;
+		z-index: 1;
+	}
+	&__inner {
+		padding-top: 15rem;
+		.outro & {
+			padding-top: 9rem;
+		}
+	}
+	&__date {
+		font-family: "HeadingPro";
+		font-weight: 400;
+		font-size: 6.17vw;
+		line-height: 120%;
+	}
+	&__box {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: 4vw;
+			right: -5rem;
+			width: 79.7vw;
+			height: 106.55vw;
+			background: url("../img/main/animated.png") no-repeat;
+			background-size: cover;
+			transform: rotate(-7deg);
+			z-index: 2;
+		}
+	}
+	&__title {
+		max-width: 70.6rem;
+		max-height: 57.5rem;
+		width: 69.5vw;
+		height: 55.7vw;
+		object-fit: contain;
+		margin-top: 1.5rem;
+	}
+	&__subtitle {
+		margin-top: 12.5vw;
+		font-weight: 300;
+		line-height: 3rem;
+		font-size: 2.4rem;
+		padding-left: 3rem;
+		position: relative;
+		z-index: 3;
+		max-width: 28.5rem;
+		width: 100%;
+	}
+	&__button {
+		position: relative;
+		margin-top: 2.3rem;
+		display: none;
+		text-align: center;
+		max-width: 32rem;
+		width: 100%;
+		font-size: 2.4rem;
+		line-height: 7rem;
+		border: 0.1rem solid #fff;
+		border-radius: 5rem;
+		z-index: 700;
+	}
+	&__skroll {
+		display: none;
+	}
+}
+.version-webinar {
+	.main {
+		&__subtitle {
+			font-family: "HeadingNow";
+			padding-left: 0;
+			margin-bottom: 0.5rem;
+			margin-top: 16rem;
+		}
+		&__text {
+			line-height: 2.5rem;
+			font-size: 2rem;
+			width: 100%;
+			margin-bottom: 5rem;
+			z-index: 100;
+		}
+		&__speaker {
+			font-family: "HeadingNow";
+			br {
+				display: none;
+			}
+		}
+	}
+}

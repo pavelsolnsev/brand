@@ -1,0 +1,180 @@
+.price {
+    &__title {
+        font-family: "HeadingNow-94";
+        font-weight: 400;
+        font-size: 8.4vw;
+        @include vw("margin-bottom: 40px;");
+        line-height: 120%;
+        position: relative;
+        z-index: 7;
+        color: #fff;
+    }
+
+    &__col {
+        @include vw("margin-bottom: 25px;");
+        &::last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(4) {
+            .price__item {
+                background: url("../img/price/bg-blue-top.png") no-repeat top left,
+        url("../img/price/bg-blue-bottom.png") no-repeat bottom right;
+            }
+        }
+    }
+
+    &__item {
+        border: 2px solid #ffffff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px 25px 0 0;
+        background: url("../img/price/bg-green-top.png") no-repeat top left,
+        url("../img/price/bg-green-bottom.png") no-repeat bottom right;
+        height: 100%;
+        overflow: hidden;
+        @include vw("padding: 30px 20px;");
+        &-title {
+            font-family: "HeadingNow-94";
+            @include vw("font-size: 24px;");
+            @include vw("padding-bottom: 35px;");
+            @include vw("margin-bottom: 35px;");
+            line-height: 129%;
+            color: #ffffff;
+            border-bottom: 0.1rem solid #c4c4c4;
+        }
+
+        &-list {
+            @include vw("margin-left: 10px;");
+            @include vw("margin-bottom: 30px;");
+            
+            li {
+                font-weight: 300;
+                @include vw("font-size: 16px;");
+                line-height: 156%;
+                color: #ffffff;
+                position: relative;
+                @include vw("padding-left: 15px;");
+                &:before {
+                    content: "";
+                    @include vw("width: 4px;");
+                    @include vw("height: 4px;");
+                    position: absolute;
+                    left: 0;
+                    @include vw("top: 11px;");
+                    display: block;
+                    background: #fff;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+
+    &__wrap {
+        display: flex;;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include vw("padding-top: 35px;");
+        @include vw("margin-top: 35px;");
+        border-top: 0.1rem solid #c4c4c4;
+        margin-top: auto;
+
+        &-numb {
+            order: 0;
+            font-family: "HeadingNow";
+            line-height: 167%;
+            color: #ffffff;
+            @include vw("margin-bottom: 25px;");
+            @include vw("font-size: 30px;");
+            text-align: center;
+
+            &_old {
+                    SPAN {
+                    position: relative;
+                }
+            }
+        }
+
+        &-button {
+            order: 2;
+            font-weight: 300;
+            @include vw("font-size: 24px;");
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            border: 1px solid #ffffff;
+            @include vw("border-radius: 50px;");
+            @include vw("height: 62px;");
+            @include vw("padding-bottom: 10px;");
+        }
+    }
+
+
+    &__black-friday {
+        display: flex;
+        order: 1;
+        background: url(../img/price/bg_black-friday_mob.png) repeat-x 50% 0;
+        margin: 0 -20px 24px -20px;
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(100% + 100px);
+        }
+
+        &-head {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 20px 5px 20px;
+
+            &:after {
+                position: absolute;
+                top: 20px;
+                bottom: 10px;
+                left: 50%;
+                content: '';
+                width: 2px;
+                background: #FFA800;;
+            }
+        }
+
+        .timer {
+            font-weight: 700;
+            color: #FFA800;
+
+            &__days1,
+            &__days2,
+            &__days3,
+            &__days4 {
+                display: none;
+            }
+        }
+
+        &-title {
+            font-family: "TT Norms";
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 99.61%;
+            color: #FFA800;
+        }
+
+        &-value {
+            width: 100%;
+            padding: 1.5rem 0;
+            background: #FFA800;
+            font-family: "HeadingNow";
+            @include vw("font-size: 30px;");
+            color: #000;
+            white-space: nowrap;
+            text-align: center;
+        }
+    }
+    .price__black-friday-head:after{
+        left: 45%;
+    }
+}

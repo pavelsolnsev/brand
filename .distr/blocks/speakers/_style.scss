@@ -1,0 +1,336 @@
+.speakers {
+    background: #000218;
+    position: relative;
+    &__inner {
+        position: relative;
+        padding: 3rem 0 21vw 0;
+        z-index: 6;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0rem;
+        top: 1rem;
+        width: 8.3rem;
+        height: 7rem;
+        background: url("../img/speakers/bg_vector-1.svg") no-repeat;
+        background-size: contain;
+    }
+    &__title {
+        margin: 0;
+        font-weight: 800;
+        font-size: 2.4rem;
+        line-height: 4.9rem;
+        color: #fff;
+    }
+    &__block {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-gap: 2.4rem;
+    }
+    &__item {
+        .hover & {
+            background-color: transparent;
+            background-size: cover;
+            background-position: 50% top;
+        }
+    }
+    &__box {
+        &[data-more-hidden] {
+            display: none;
+        }
+        .pryanishnicov {
+            background-image: url(../img/speakers/pryanishnicov.png);
+        }
+        .shepin {
+            background-image: url(../img/speakers/shepin.jpg);
+        }
+        .poyarkov {
+            background-image: url(../img/speakers/poyarkov.jpg);
+        }
+        .elchina {
+            background-image: url(../img/speakers/elchina.jpg);
+        }
+        .kolesnikov {
+            background-image: url(../img/speakers/kolesnikov.jpg);
+        }
+        .lazuchenkov {
+            background-image: url(../img/speakers/lazuchenkov.jpg);
+        }
+        .lobov {
+            background-image: url(../img/speakers/lobov.jpg);
+        }
+        .savko {
+            background-image: url(../img/speakers/savko.jpg);
+        }
+        .efimova {
+            background-image: url(../img/speakers/efimova.jpg);
+        }
+        .troska {
+            background-image: url(../img/speakers/troska.png);
+        }
+        .sereda {
+            background-image: url(../img/speakers/sereda.png);
+        }
+        .hvan {
+            background-image: url(../img/speakers/hvan.jpg);
+        }
+        .babenko {
+            background-image: url(../img/speakers/babenko.png);
+        }
+        .krishvalova {
+            background-image: url(../img/speakers/krishvalova.png);
+        }
+        .kunov {
+            background-image: url(../img/speakers/kunov.png);
+        }
+        .kopanev {
+            background-image: url(../img/speakers/kopanev.png);
+        }
+        .moroz {
+            background-image: url(../img/speakers/moroz.jpg);
+        }
+        .alonchikova {
+            background-image: url(../img/speakers/alonchikova.jpg);
+        }
+        .sologov {
+            background-image: url(../img/speakers/sologov.png);
+        }
+        .bearwulf {
+            background-image: url(../img/speakers/bearwulf.png);
+        }
+        .lukasheva {
+            background-image: url(../img/speakers/lukasheva.png);
+        }
+        .myakotnikova {
+            background-image: url(../img/speakers/myakotnikova.png);
+        }
+        .myagkikh {
+            background-image: url(../img/speakers/myagkikh.png);
+        }
+        .bazaleyev {
+            background-image: url(../img/speakers/bazaleyev.png);
+        }
+        .ryabov {
+            background-image: url(../img/speakers/ryabov.png);
+        }
+        .senderov {
+            background-image: url(../img/speakers/senderov.png);
+        }
+        .belkina {
+            background-image: url(../img/speakers/belkina.png);
+        }
+        .biktimirov {
+            background-image: url(../img/speakers/biktimirov.png);
+        }
+        .idrisov {
+            background-image: url(../img/speakers/idrisov.png);
+        }
+        .emoroz {
+            background-image: url(../img/speakers/emoroz.png);
+        }
+        .serebryakova {
+            background-image: url(../img/speakers/serebryakova.png);
+        }
+    }
+    .hover {
+        .pryanishnicov {
+            background-image: url(../img/speakers/pryanishnicov-color.png);
+        }
+        .shepin {
+            background-image: url(../img/speakers/shepin-color.png);
+        }
+        .poyarkov {
+            background-image: url(../img/speakers/poyarkov-color.png);
+        }
+        .elchina {
+            background-image: url(../img/speakers/elchina-color.png);
+        }
+        .kolesnikov {
+            background-image: url(../img/speakers/kolesnikov.png);
+        }
+        .lazuchenkov {
+            background-image: url(../img/speakers/lazuchenkov.png);
+        }
+        .lobov {
+            background-image: url(../img/speakers/lobov.png);
+        }
+        .savko {
+            background-image: url(../img/speakers/savko.png);
+        }
+        .efimova {
+            background-image: url(../img/speakers/efimova.png);
+        }
+        .troska {
+            background-image: url(../img/speakers/troska-colors.png);
+        }
+        .sereda {
+            background-image: url(../img/speakers/sereda-colors.png);
+        }
+        .hvan {
+            background-image: url(../img/speakers/hvan-colors.png);
+        }
+        .babenko {
+            background-image: url(../img/speakers/babenko-colors.png);
+        }
+        .krishvalova {
+            background-image: url(../img/speakers/krishvalova-color.png);
+        }
+        .kunov {
+            background-image: url(../img/speakers/kunov-color.png);
+        }
+        .kopanev {
+            background-image: url(../img/speakers/kopanev-colors.png);
+        }
+        .moroz {
+            background-image: url(../img/speakers/moroz-color.png);
+        }
+        .alonchikova {
+            background-image: url(../img/speakers/alonchikova-color.png);
+        }
+        .sologov {
+            background-image: url(../img/speakers/sologov-color.png);
+        }
+        .bearwulf {
+            background-image: url(../img/speakers/bearwulf-color.png);
+        }
+        .lukasheva {
+            background-image: url(../img/speakers/lukasheva-color.png);
+        }
+        .myakotnikova {
+            background-image: url(../img/speakers/myakotnikova-color.png);
+        }
+        .myagkikh {
+            background-image: url(../img/speakers/myagkikh-color.png);
+        }
+        .bazaleyev {
+            background-image: url(../img/speakers/bazaleyev-color.png);
+        }
+        .ryabov {
+            background-image: url(../img/speakers/ryabov-color.png);
+        }
+        .senderov {
+            background-image: url(../img/speakers/senderov-color.png);
+        }
+        .belkina {
+            background-image: url(../img/speakers/belkina-color.png);
+        }
+        .biktimirov {
+            background-image: url(../img/speakers/biktimirov-color.png);
+        }
+        .idrisov {
+            background-image: url(../img/speakers/idrisov-color.png);
+        }
+        .emoroz {
+            background-image: url(../img/speakers/emoroz-color.png);
+        }
+        .serebryakova {
+            background-image: url(../img/speakers/serebryakova-color.png);
+        }
+        .shepin,
+        .poyarkov,
+        .elchina {
+            // &::before {
+            // 	display: block;
+            // }
+            // .speakers__item-btn {
+            // 	display: block;
+            // }
+        }
+    }
+    &__text {
+        margin-top: 1rem;
+        font-weight: 300;
+        font-size: 4.3vw;
+        line-height: 120%;
+        color: #fff;
+        &-hover {
+            display: none;
+        }
+        &-desctop {
+            display: flex;
+        }
+    }
+    &__item {
+        width: 41vw;
+        height: 61.26vw;
+        background: #FFF no-repeat 50% bottom / cover;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 1rem;
+        transition: 0.3s;
+        &-img {
+            width: 9.6rem;
+            height: 9.6rem;
+            margin-top: 2.1rem;
+        }
+        &-name {
+            font-weight: 300;
+            font-size: 4.3vw;
+            line-height: 120%;
+            color: #000;
+            text-align: left;
+            word-wrap: break-word;
+        }
+        &-text {
+            display: none;
+            padding: 0 1.3rem 0 1.3rem;
+            margin-top: 1rem;
+            font-weight: 600;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            color: #290f0c;
+        }
+        &::before {
+            position: absolute;
+            display: none;
+            content: "";
+            width: 12vw;
+            height: 11vw;
+            background: url(../img/speakers/speker_about.svg) no-repeat;
+            background-size: contain;
+            bottom: 6%;
+            right: 16%;
+            z-index: 2;
+        }
+        &-btn {
+            position: absolute;
+            display: none;
+            bottom: 13%;
+            right: 25%;
+            font-size: 1.2vw;
+            line-height: 120%;
+            letter-spacing: 0.1em;
+            z-index: 4;
+            color: #000;
+            cursor: pointer;
+            &:active,
+            &:hover,
+            &:focus {
+                color: #000;
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 3rem;
+        z-index: 1;
+        position: relative;
+        color: #fff;
+        line-height: 6.5rem;
+        font-size: 1.4rem;
+        border: 0.4rem solid #fff;
+        border-radius: 5rem;
+        width: 22.3rem;
+        text-align: center;
+        &.d-none {
+            display: none;
+        }
+    }
+}
